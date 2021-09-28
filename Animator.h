@@ -51,7 +51,6 @@ public:
     };
 
     // Manage the animator
-    static void init(double startTime);
     static void tick(double nowtime);
 
     // Create and manage animations

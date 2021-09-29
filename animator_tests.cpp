@@ -3,6 +3,7 @@
 #include <thread>
 #include "Animator.h"
 
+
 int main() {
     // state vars
     bool quit = false;
@@ -55,11 +56,11 @@ int main() {
     size_t animB = Animator::create(config);
 
     // cancel one animation and completeNow the other
-    Animator::doAfter(5.5, [&]{ 
+    Animator::doAfter(5.5, []{ 
         printf("CANCELING %zu...\n", animA);
         Animator::cancel(animA);
     });
-    Animator::doAfter(6.0, [&]{ 
+    Animator::doAfter(6.0, []{ 
         Animator::completeNow(animB);
     });
 

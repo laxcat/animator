@@ -84,7 +84,3 @@ size_t Animator::nextId = 0;
 std::list<Animator::Animation> Animator::all;
 double Animator::nowTime = 0;
 double Animator::prevTime = 0;
-
-// c api
-
-void Animator_tick(double nowTime) { Animator::tick(nowTime); }

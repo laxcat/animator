@@ -57,5 +57,4 @@ private:
     static std::list<Animation> all;
     static double nowTime;
     static double prevTime;
-    static double startTime;
 };
